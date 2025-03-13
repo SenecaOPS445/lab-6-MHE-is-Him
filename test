@@ -1,0 +1,26 @@
+from student import Student  # Importing the Student class
+
+# Creating Student objects
+student1 = Student("John", "013454900")
+student2 = Student("Jessica", "023384103")
+
+# Display initial details
+student1.displayStudent()
+student2.displayStudent()
+
+# Adding grades
+student1.addGrade("ULI101", 4.0)
+student1.addGrade("OPS245", 3.5)
+student1.addGrade("OPS445", 3.0)
+
+student2.addGrade("IPC144", 4.0)
+student2.addGrade("CPP244", 4.0)
+
+# Display GPA
+student1.displayGPA()
+student2.displayGPA()
+
+# Modify student name
+print("\nBefore name change:", student1.name)
+student1.name = "Jack"
+print("After name change:", student1.name)
